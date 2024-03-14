@@ -3,22 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("https://iiif.micr.io/ugeeH/full/1280,/0/default.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
 
-    <title>Project</title>
+        .alex-brush-regular {
+            font-family: "Alex Brush", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }   
+        
+        #brand {
+            width: 200px;
+        }
+
+        #self-portrait {
+            width: 500px;
+        }
+
+        #life {
+            font-size: x-large;
+        }
+
+        #description {
+            font-size: x-large;
+        }
+    </style>
+    <title>ICT Project</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-6"><p>Vincent Willem van Gogh (Dutch: [ˈvɪnsɛnt ˈʋɪləɱ vɑŋ ˈɣɔx] ⓘ;[note 1] 30 March 1853 – 29 July 1890) was a Dutch Post-Impressionist painter who is among the most famous and influential figures in the history of Western art. In just over a decade he created approximately 2100 artworks, including around 860 oil paintings, most of them in the last two years of his life. They include landscapes, still lifes, portraits and self-portraits, and are characterised by bold, symbolic colours, and dramatic, impulsive and highly expressive brushwork that contributed to the foundations of modern art. Only one of his paintings was known by name to have been sold during his lifetime. Van Gogh became famous after his suicide at age 37, which followed years of poverty and mental illness. <br><br>Born into an upper-middle-class family, Van Gogh drew as a child and was serious, quiet and thoughtful, but showed signs of mental instability. As a young man he worked as an art dealer, often travelling, but became depressed after he was transferred to London. He turned to religion, and spent time as a missionary in southern Belgium. Later he drifted in ill-health and solitude. He was keenly aware of modernist trends in art and, while back with his parents, took up painting in 1881. His younger brother, Theo, supported him financially, and the two of them kept up a long correspondence by letter. <br><br>Van Gogh's early works consisted of mostly still lifes and depictions of peasant labourers. In 1886, he moved to Paris, where he met members of the artistic avant-garde, including Émile Bernard and Paul Gauguin, who were seeking new paths beyond Impressionism. Frustrated in Paris and inspired by a growing spirit of artistic change and collaboration, Van Gogh moved to Arles in south of France in February 1888 with the goal of establishing an artistic retreat and commune. Once there, Van Gogh's art changed. His paintings grew brighter and he turned his attention to the natural world, depicting local olive groves, wheat fields and sunflowers. Van Gogh invited Gauguin to join him in Arles and eagerly anticipated Gauguin's arrival in the fall of 1888.</p></div>
-            <div class="col-xl-6"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4GlTzKuqP4x3QH5iMv4A5NLBjF3h9JPFNJ2yUjPj6n2nJsPj9" alt=""></div>
+    <nav id="top" class="navbar navbar-expand-xl bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Vincent_Van_Gogh_Signature.svg/1200px-Vincent_Van_Gogh_Signature.svg.png" id="brand">
+            </a>
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item"> 
+                    <a href="#life" class="nav-link">Life</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Works</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#starry-nights" class="dropdown-item">Starry Night</a></li>
+                        <li><a href="#van-gogh-chair" class="dropdown-item">Van Gogh's Chair</a></li>
+                        <li><a href="#vase-sunflowers" class="dropdown-item">Vase with Fifteen Sunflowers</a></li>
+                        <li><a href="#wheatfield-crows" class="dropdown-item">Wheatfield with Crows</a></li>
+                        <li><a href="#bedroom-arles" class="dropdown-item">Bedroom in Arles</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"> 
+                    <a href="#" class="nav-link">Contact Us</a>
+                </li>
+            </ul>
+        </div>  		
+    </nav>
+    <br>
+<center>
+    <div id="home" class="container">
+        <img src="https://cdn.britannica.com/36/69636-050-81A93193/Self-Portrait-artist-panel-board-Vincent-van-Gogh-1887.jpg" id="self-portrait" class="rounded-circle">
+        <br>
+        <p class="text-light">Vincent Van Gogh's Self-Portrait (1887)</p>
+        <br>
+        <p class="text-light" id="description">Vincent Willem van Gogh was a Dutch painter who is widely known across the world as one of the most famous and influencial people in Western art's history.</p>
+    </div>
+</center>
+    <br>
+    <hr>
+    <br>
+    <div id="life" class="container">
+        <br>
+        <h1 class="text-light">Life of Van Gogh</h1>
+        <br>
+        <p class="text-light">Vincent Van Gogh was born on March 30, 1853, in Groot Zundert, North Brabant, Netherlands. From childhood, he showed signs of a moody and agitated temperament that would torment his projects throughout his entire life. Son of a Protestant pastor, he first chose to orient his life towards Protestantism, becoming a preacher in London, a student of theology and an evangelizer among the mining populations of Borinage. Becoming sympathetic to the miners’ struggle, Van Gogh practiced painting, leaving us the first traces of a somber style; one certainly marked by the misery of the miners, but one to which he also attached a sense of urgency and intensity.</p>
+        <br>
+        <p class="text-light">In 1886, he moved to Paris and lived with his brother Theo, who ran a small gallery of paintings. He quickly became acquainted with the young painters of the era, who were at the forefront of the most innovative artistic movements. Influenced by the work of the impressionists, as well as Japanese artists, Van Gogh’s style began to evolve. His colours brightened and his brushstrokes refined according to the shapes of the objects he represented. Beginning in 1888, he adopted the frank and bright hues present in the paintings of his French contemporaries before leaving Paris for the South of France.</p>
+        <br>
+        <p class="text-light">Under the sun of Provence, he painted landscapes and scenes of southern life. The artist, then based in Arles, began using curved and swirling brushstrokes, as well as pure colours, particularly yellow, green and blue. This technique, very specific to Van Gogh’s work, appears in his famous paintings Bedroom in Arles (1888) and The Starry Night (1889). Any visible creation by Van Gogh from this period, whether painted or drawn, is seemingly bestowed with a physical and spiritual vitality. In this spirit of enthusiasm, he persuaded Paul Gauguin, an artist whom he had met in Paris, to come stay with him.</p>
+        <br>
+        <p class="text-light">After less than two months of working together, their relationship deteriorated rapidly, culminating in the famous dispute in which Van Gogh threatened Gaugin with a razor blade. That same night, Van Gogh completely severed his own ear. A few months later, he voluntarily entered the asylum of Saint-Rémy-de-Provence, where he painted fiercely. A great number of his masterpieces were created during this period.</p>
+        <br>
+        <p class="text-light">In May 1890, the artist left the south and returned to his brother Theo in Paris. He took up residence close by in Auvers-sur-Oise, near the house of Dr. Gachet, an admirer and patron of several impressionist painters, as well as the subject of one of his portraits. The artist worked arduously in Auvers before passing away on July 29, 1890, leaving behind an artistic legacy that is today recognized around the globe.</p>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div id="works" class="container">
+        <h1 class="text-light">Works of Van Gogh</h1>
+        <br>
+        <br>
+        <div id="starry-nights" class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <h2 class="text-light">Starry Night (1889)</h2><p id="description" class="text-light">One of the most recognizable pieces of art. The <em>Starry Night</em> depicts Van Gogh's view from the asylum over the township o Saint-Remy. The foreground cypress dominates the magical night sky with its swirling clouds and yellow cresent moon and stars, while the small steeple in the background gives the scene depth. The intensely emotioinal fluid brushstrokes and rolling sky reveal a deeply troubled mind, yet do not convey despair.</p>
+                </div>
+                <div class="col-xl-6">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/800px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" alt="" class="thumbnail" width="600px">
+                </div>
+            </div>
         </div>
         <br>
-        <div class="row">
-            <div class="col-xl-4"><img class="rounded-circle" src="https://cdn.britannica.com/78/43678-050-F4DC8D93/Starry-Night-canvas-Vincent-van-Gogh-New-1889.jpg" alt="" height="400px"></div>
-            <div class="col-xl-4"><img class="rounded-circle" src="https://slavneobrazy.cz/obr/webp/9411.webp" alt="" height="400px"></div>
-            <div class="col-xl-4"><img class="rounded-circle" src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/436535/796067/main-image" alt="" height="400px"></div>
+        <br>
+        <div id="van-gogh-chair" class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Vincent_Willem_van_Gogh_138.jpg/800px-Vincent_Willem_van_Gogh_138.jpg" alt="" class="thumbnail" width="600px">
+                </div>
+                <div class="col-xl-6">
+                    <h2 class="text-light">Van Gogh's Chair (1888)</h2><p id="description" class="text-light">One of the most recognizable pieces of art. The <em>Starry Night</em> depicts Van Gogh's view from the asylum over the township o Saint-Remy. The foreground cypress dominates the magical night sky with its swirling clouds and yellow cresent moon and stars, while the small steeple in the background gives the scene depth. The intensely emotioinal fluid brushstrokes and rolling sky reveal a deeply troubled mind, yet do not convey despair.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div id="vase-sunflowers" class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <h2 class="text-light">Vase with Fifteen Sunflowers (1888)</h2><p id="description" class="text-light">One of the most recognizable pieces of art. The <em>Starry Night</em> depicts Van Gogh's view from the asylum over the township o Saint-Remy. The foreground cypress dominates the magical night sky with its swirling clouds and yellow cresent moon and stars, while the small steeple in the background gives the scene depth. The intensely emotioinal fluid brushstrokes and rolling sky reveal a deeply troubled mind, yet do not convey despair.</p>
+                </div>
+                <div class="col-xl-6">
+                    <img src="https://www.artisoo.com/images/oil-painting-509/ARTS509127.jpg" alt="" class="thumbnail" width="600px">
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div id="wheatfield-crows" class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <img src="https://artincontext.org/wp-content/uploads/2023/05/Subject-Matter-in-Wheatfield-with-Crows-Analysis.jpg" alt="" class="thumbnail" width="600px">
+                </div>
+                <div class="col-xl-6">
+                    <h2 class="text-light">Wheatfield with Crows (1890)</h2><p id="description" class="text-light">One of the most recognizable pieces of art. The <em>Starry Night</em> depicts Van Gogh's view from the asylum over the township o Saint-Remy. The foreground cypress dominates the magical night sky with its swirling clouds and yellow cresent moon and stars, while the small steeple in the background gives the scene depth. The intensely emotioinal fluid brushstrokes and rolling sky reveal a deeply troubled mind, yet do not convey despair.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div id="bedroom-arles" class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <h2 class="text-light">Bedroom in Arles (1888)</h2><p id="description" class="text-light">One of the most recognizable pieces of art. The <em>Starry Night</em> depicts Van Gogh's view from the asylum over the township o Saint-Remy. The foreground cypress dominates the magical night sky with its swirling clouds and yellow cresent moon and stars, while the small steeple in the background gives the scene depth. The intensely emotioinal fluid brushstrokes and rolling sky reveal a deeply troubled mind, yet do not convey despair.</p>
+                </div>
+                <div class="col-xl-6">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg/800px-Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg" alt="" class="thumbnail" width="600px">
+                </div>
+            </div>
         </div>
     </div>
+    <br>
+<nav class="navbar navbar-expand-xl bg-dark">
+    <div class="container-fluid justify-content-center">
+        <form class="d-flex">
+            <a class="btn btn-outline-light" type="button" href="#top" >Back to Top</a>
+        </form>
+    </div>
+</nav>
 </body>
 </html>
